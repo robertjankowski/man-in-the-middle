@@ -1,0 +1,369 @@
+# Nmap 7.80 scan initiated Sun Nov  1 14:30:41 2020 as: nmap -T4 -A -v --append-output -o out.txt 192.168.0.1
+# Nmap 7.80 scan initiated Sun Nov  1 14:33:46 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.1
+Nmap scan report for 192.168.0.1
+Host is up (0.0020s latency).
+Not shown: 993 filtered ports
+PORT     STATE  SERVICE    VERSION
+22/tcp   closed ssh
+23/tcp   closed telnet
+80/tcp   open   tcpwrapped
+|_http-favicon: Ubee Interactive Cable Modem
+|_http-title:    CGA2121  
+443/tcp  open   ssl/https
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Content-type: text/html
+|     Expires: Thu, 3 Oct 1968 12:00:00 GMT
+|     Connection: close
+|     Pragma: no-cache
+|     Content-Length: 3575
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+|     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+|     <script language="javascript" type="text/javascript">
+|     function checkPassword()
+|     window.document.forms[0].submit();
+|     </script>
+|     <title>
+|     CGA2121
+|     </title>
+|     <link href="bootstrap.min.css" rel="stylesheet"/>
+|     <!--link href="cisco-theme.css" rel="stylesheet"/-->
+|     <!--link href="custom.css" rel="stylesheet"/-->
+|     <script src="jquery.min.js"></script>
+|     <!--
+|     <script src="bootstrap.min.js"></script>
+|     <script src="jquery.validate.min.js"></script>
+|     <script src="additional-methods.min.js"></script>
+|     <!--[if IE]>
+|_    <script src="html5shiv.min.js"></scrip
+| http-methods: 
+|_  Supported Methods: GET
+|_http-title:    CGA2121  
+| ssl-cert: Subject: commonName=7C:9A:54:0E:E7:F0/organizationName=Technicolor/countryName=US
+| Issuer: commonName=Technicolor Cable Modem Root Certificate Authority/organizationName=Technicolor/countryName=US
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2018-05-10T14:29:24
+| Not valid after:  2048-05-10T14:29:24
+| MD5:   4edd 477b ae91 950e 27de 2a99 5fb9 69b6
+|_SHA-1: 7e48 9714 02cb 4ea8 1b30 07b3 e5a8 2e5f 9e94 4297
+|_ssl-date: TLS randomness does not represent time
+1900/tcp open   http       Cisco DPC3828S WiFi cable modem
+8080/tcp closed http-proxy
+8082/tcp open   http       Mongoose httpd
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/1%Time=5F9EB94B%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,E85,"HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html
+SF:\r\nExpires:\x20Thu,\x203\x20Oct\x201968\x2012:00:00\x20GMT\r\nConnecti
+SF:on:\x20close\r\nPragma:\x20no-cache\r\nContent-Length:\x203575\r\n\r\n<
+SF:!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n\x20<head>\n\x20\x20<meta\x20
+SF:http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=utf-8\"/
+SF:>\n\x20\x20<meta\x20content=\"width=device-width,\x20initial-scale=1\.0
+SF:\"\x20name=\"viewport\"/>\n<script\x20language=\"javascript\"\x20type=\
+SF:"text/javascript\">\n\nfunction\x20checkPassword\(\)\n{\n\x20\x20window
+SF:\.document\.forms\[0\]\.submit\(\);\n}\n</script>\n\x20\x20<title>\n\x2
+SF:0\x20\x20CGA2121\n\x20\x20</title>\n\x20\x20<link\x20href=\"bootstrap\.
+SF:min\.css\"\x20rel=\"stylesheet\"/>\n\x20\x20<!--link\x20href=\"cisco-th
+SF:eme\.css\"\x20rel=\"stylesheet\"/-->\n\x20\x20<!--link\x20href=\"custom
+SF:\.css\"\x20rel=\"stylesheet\"/-->\n\x20\x20<script\x20src=\"jquery\.min
+SF:\.js\"></script>\n<!--\n\x20\x20<script\x20src=\"bootstrap\.min\.js\"><
+SF:/script>\n\x20\x20<script\x20src=\"jquery\.validate\.min\.js\"></script
+SF:>\n\x20\x20<script\x20src=\"additional-methods\.min\.js\"></script>\n--
+SF:>\n\x20\x20<!--\[if\x20IE\]>\n\x20\x20\x20\x20\x20\x20<script\x20src=\"
+SF:html5shiv\.min\.js\"></scrip");
+Service Info: Device: WAP; CPE: cpe:/h:cisco:dpc3828s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:36:29 2020 -- 1 IP address (1 host up) scanned in 162.95 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:36:29 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.11
+Nmap scan report for 192.168.0.11 [host down]
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Nov  1 14:36:31 2020 -- 1 IP address (0 hosts up) scanned in 2.43 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:36:31 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.16
+Nmap scan report for 192.168.0.16
+Host is up (0.60s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: 
+|_    HTTP/1.1 400 Bad Request
+|_http-title: Site doesn't have a title.
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.0.37 (workgroup: WORKGROUP)
+4321/tcp open  rwhois?
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest, SIPOptions: 
+|_    HTTP/1.1 400 Bad Request
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.80%I=7%D=11/1%Time=5F9EB9E7%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(HTTPOptions,1
+SF:C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(RTSPRequest,1C,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(FourOhFourRequest,1C,"HTTP/1\
+SF:.1\x20400\x20Bad\x20Request\r\n\r\n")%r(GenericLines,1C,"HTTP/1\.1\x204
+SF:00\x20Bad\x20Request\r\n\r\n")%r(SIPOptions,1C,"HTTP/1\.1\x20400\x20Bad
+SF:\x20Request\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port4321-TCP:V=7.80%I=7%D=11/1%Time=5F9EB9EC%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(GetReques
+SF:t,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(HTTPOptions,1C,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(RTSPRequest,1C,"HTTP/1\.1\
+SF:x20400\x20Bad\x20Request\r\n\r\n")%r(FourOhFourRequest,1C,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\n\r\n")%r(SIPOptions,1C,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\n\r\n");
+
+Host script results:
+|_clock-skew: mean: 25m48s, deviation: 1s, median: 25m47s
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.37)
+|   NetBIOS computer name: 
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2020-11-01T14:04:49+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: share (dangerous)
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:40:46 2020 -- 1 IP address (1 host up) scanned in 254.45 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:40:46 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.17
+Warning: 192.168.0.17 giving up on port because retransmission cap hit (6).
+Nmap scan report for 192.168.0.17
+Host is up (0.0028s latency).
+Not shown: 977 closed ports
+PORT      STATE    SERVICE        VERSION
+33/tcp    filtered dsp
+135/tcp   open     msrpc          Microsoft Windows RPC
+139/tcp   open     netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+458/tcp   filtered appleqtc
+631/tcp   filtered ipp
+648/tcp   filtered rrp
+1074/tcp  filtered warmspotMgmt
+1148/tcp  filtered elfiq-repl
+1166/tcp  filtered qsm-remote
+2020/tcp  filtered xinupageserver
+2021/tcp  filtered servexec
+3493/tcp  filtered nut
+3918/tcp  filtered pktcablemmcops
+5357/tcp  open     http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+5500/tcp  filtered hotline
+5802/tcp  filtered vnc-http-2
+5950/tcp  filtered unknown
+9050/tcp  filtered tor-socks
+17877/tcp filtered unknown
+24800/tcp filtered unknown
+32769/tcp filtered filenet-rpc
+50000/tcp filtered ibm-db2
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -6s
+| nbstat: NetBIOS name: DESKTOP-JTKB1CE, NetBIOS user: <unknown>, NetBIOS MAC: 80:2b:f9:99:05:07 (Hon Hai Precision Ind.)
+| Names:
+|   DESKTOP-JTKB1CE<20>  Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|_  DESKTOP-JTKB1CE<00>  Flags: <unique><active>
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-11-01T13:41:15
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:41:26 2020 -- 1 IP address (1 host up) scanned in 40.54 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:41:26 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.21
+Nmap scan report for 192.168.0.21
+Host is up (0.00057s latency).
+Not shown: 999 closed ports
+PORT     STATE SERVICE  VERSION
+5555/tcp open  freeciv?
+| fingerprint-strings: 
+|   adbConnect: 
+|     CNXN
+|_    device::ro.product.name=android_x86;ro.product.model=VMware Virtual Platform;ro.product.device=x86;features=stat_v2,cmd,shell_v2
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5555-TCP:V=7.80%I=7%D=11/1%Time=5F9EBB17%P=x86_64-pc-linux-gnu%r(ad
+SF:bConnect,98,"CNXN\x01\0\0\x01\0\x10\0\0\x80\0\0\0\xfc/\0\0\xbc\xb1\xa7\
+SF:xb1device::ro\.product\.name=android_x86;ro\.product\.model=VMware\x20V
+SF:irtual\x20Platform;ro\.product\.device=x86;features=stat_v2,cmd,shell_v
+SF:2");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:42:56 2020 -- 1 IP address (1 host up) scanned in 89.21 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:42:56 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.66
+Nmap scan report for 192.168.0.66
+Host is up (0.0012s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+912/tcp  open  vmware-auth     VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+3580/tcp open  http            National Instruments LabVIEW service locator httpd 1.0.0
+| http-methods: 
+|_  Supported Methods: GET
+|_http-server-header: NI Service Locator/1.0.0 (SLServer)
+|_http-title: Service Unavailable
+5357/tcp open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: DESKTOP-JMD9350, NetBIOS user: <unknown>, NetBIOS MAC: 70:8b:cd:0e:b9:a7 (Asustek Computer)
+| Names:
+|   DESKTOP-JMD9350<00>  Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|_  DESKTOP-JMD9350<20>  Flags: <unique><active>
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-11-01T13:43:09
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:44:14 2020 -- 1 IP address (1 host up) scanned in 78.25 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:44:14 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.18
+Nmap scan report for 192.168.0.18
+Host is up (0.0088s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        Brother/HP printer ftpd 1.13
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|_  SYST: UNIX Type: ITRON embedded printer OS.
+23/tcp   open  telnet     Brother/HP printer telnetd
+80/tcp   open  http       Debut embedded httpd 1.20 (Brother/HP printer http admin)
+| http-methods: 
+|_  Supported Methods: GET
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: debut/1.20
+| http-title: Brother DCP-T500W
+|_Requested resource was /general/index.html
+443/tcp  open  ssl/http   Debut embedded httpd 1.20 (Brother/HP printer http admin)
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: debut/1.20
+| ssl-cert: Subject: commonName=Preset Certificate
+| Issuer: commonName=Preset Certificate
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2000-01-01T00:00:00
+| Not valid after:  2049-12-30T23:59:59
+| MD5:   0012 4fc0 c0f5 f13a 8e48 e541 dcbe d76a
+|_SHA-1: fbba 7f11 4078 edb6 2d6f c650 bc29 1abe 71c4 ce04
+|_ssl-date: 1970-01-19T05:49:16+00:00; -50y287d07h56m49s from scanner time.
+515/tcp  open  printer
+631/tcp  open  ipp?
+9100/tcp open  jetdirect?
+Service Info: Device: printer
+
+Host script results:
+|_clock-skew: -18549d07h56m49s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:46:05 2020 -- 1 IP address (1 host up) scanned in 111.44 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:46:05 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.100.1
+Nmap scan report for 192.168.100.1
+Host is up (0.0047s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  tcpwrapped
+|_http-favicon: Ubee Interactive Cable Modem
+|_http-title:    CGA2121  
+443/tcp  open  ssl/https
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Content-type: text/html
+|     Expires: Thu, 3 Oct 1968 12:00:00 GMT
+|     Connection: close
+|     Pragma: no-cache
+|     Content-Length: 3575
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+|     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+|     <script language="javascript" type="text/javascript">
+|     function checkPassword()
+|     window.document.forms[0].submit();
+|     </script>
+|     <title>
+|     CGA2121
+|     </title>
+|     <link href="bootstrap.min.css" rel="stylesheet"/>
+|     <!--link href="cisco-theme.css" rel="stylesheet"/-->
+|     <!--link href="custom.css" rel="stylesheet"/-->
+|     <script src="jquery.min.js"></script>
+|     <!--
+|     <script src="bootstrap.min.js"></script>
+|     <script src="jquery.validate.min.js"></script>
+|     <script src="additional-methods.min.js"></script>
+|     <!--[if IE]>
+|_    <script src="html5shiv.min.js"></scrip
+|_http-title:    CGA2121  
+| ssl-cert: Subject: commonName=7C:9A:54:0E:E7:F0/organizationName=Technicolor/countryName=US
+| Issuer: commonName=Technicolor Cable Modem Root Certificate Authority/organizationName=Technicolor/countryName=US
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2018-05-10T14:29:24
+| Not valid after:  2048-05-10T14:29:24
+| MD5:   4edd 477b ae91 950e 27de 2a99 5fb9 69b6
+|_SHA-1: 7e48 9714 02cb 4ea8 1b30 07b3 e5a8 2e5f 9e94 4297
+8080/tcp open  http       Mongoose httpd
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.80%T=SSL%I=7%D=11/1%Time=5F9EBC2B%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,E85,"HTTP/1\.1\x20200\x20OK\r\nContent-type:\x20text/html
+SF:\r\nExpires:\x20Thu,\x203\x20Oct\x201968\x2012:00:00\x20GMT\r\nConnecti
+SF:on:\x20close\r\nPragma:\x20no-cache\r\nContent-Length:\x203575\r\n\r\n<
+SF:!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n\x20<head>\n\x20\x20<meta\x20
+SF:http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=utf-8\"/
+SF:>\n\x20\x20<meta\x20content=\"width=device-width,\x20initial-scale=1\.0
+SF:\"\x20name=\"viewport\"/>\n<script\x20language=\"javascript\"\x20type=\
+SF:"text/javascript\">\n\nfunction\x20checkPassword\(\)\n{\n\x20\x20window
+SF:\.document\.forms\[0\]\.submit\(\);\n}\n</script>\n\x20\x20<title>\n\x2
+SF:0\x20\x20CGA2121\n\x20\x20</title>\n\x20\x20<link\x20href=\"bootstrap\.
+SF:min\.css\"\x20rel=\"stylesheet\"/>\n\x20\x20<!--link\x20href=\"cisco-th
+SF:eme\.css\"\x20rel=\"stylesheet\"/-->\n\x20\x20<!--link\x20href=\"custom
+SF:\.css\"\x20rel=\"stylesheet\"/-->\n\x20\x20<script\x20src=\"jquery\.min
+SF:\.js\"></script>\n<!--\n\x20\x20<script\x20src=\"bootstrap\.min\.js\"><
+SF:/script>\n\x20\x20<script\x20src=\"jquery\.validate\.min\.js\"></script
+SF:>\n\x20\x20<script\x20src=\"additional-methods\.min\.js\"></script>\n--
+SF:>\n\x20\x20<!--\[if\x20IE\]>\n\x20\x20\x20\x20\x20\x20<script\x20src=\"
+SF:html5shiv\.min\.js\"></scrip");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov  1 14:48:45 2020 -- 1 IP address (1 host up) scanned in 160.00 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:48:45 2020 as: nmap -T4 -A -v --append-output -oN out.txt 192.168.0.10
+Nmap scan report for 192.168.0.10 [host down]
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Nov  1 14:48:48 2020 -- 1 IP address (0 hosts up) scanned in 2.40 seconds
+# Nmap 7.80 scan initiated Sun Nov  1 14:48:48 2020 as: nmap -T4 -A -v --append-output -oN out.txt 172.31.255.50
+Nmap scan report for 172.31.255.50 [host down]
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Nov  1 14:48:50 2020 -- 1 IP address (0 hosts up) scanned in 2.37 seconds

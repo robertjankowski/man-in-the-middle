@@ -57,11 +57,9 @@
  
 
 4. Wireshark
-  - Let's say we want to know what our victim is doing on specific page (and we
-    know IP of that server). We can filter our results by _source_ and
-destination_:
+  - Let's say we want to know what our victim is doing on specific page (and we know IP of that server). We can filter our results by _source_ and destination_: 
 
-    ![](images/wireshar_example.png)
+    ![](images/wireshark_example.png)
 
 ---
 
@@ -75,5 +73,3 @@ destination_:
   - take a device screenshot: `screenshot`
   - reboot device: `reboot`
   - run shell: `shell` -> `su` to get root privilege
-
-

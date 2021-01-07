@@ -15,8 +15,7 @@ fi
 ip=$1
 proxychains=$2
 
-ports_command="nmap -p- --min-rate=1000 -T4 $ip | grep ^[0-9] | cut -d '/' -f
-1 | tr '\n' ',' | sed s/,$//"
+ports_command="nmap -p- --min-rate=1000 -T4 $ip | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//"
 
 if [ $proxychains == 1 ]; then
   ports_command="proxychains "$ports_command
